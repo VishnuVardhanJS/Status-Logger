@@ -1,0 +1,65 @@
+services:
+  - name: OpenAI
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.openai.com/api/v2/components.json"
+    incidents_endpoint: "https://status.openai.com/api/v2/incidents.json"
+    status_endpoint: "https://status.openai.com/api/v2/status.json"
+
+  - name: Twilio
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.twilio.com/api/v2/components.json"
+    incidents_endpoint: "https://status.twilio.com/api/v2/incidents.json"
+    status_endpoint: "https://status.twilio.com/api/v2/status.json"
+
+  - name: Datadog
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.datadoghq.com/api/v2/components.json"
+    incidents_endpoint: "https://status.datadoghq.com/api/v2/incidents.json"
+    status_endpoint: "https://status.datadoghq.com/api/v2/status.json"
+
+  - name: DigitalOcean
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.digitalocean.com/api/v2/components.json"
+    incidents_endpoint: "https://status.digitalocean.com/api/v2/incidents.json"
+    status_endpoint: "https://status.digitalocean.com/api/v2/status.json"
+
+  - name: Shopify
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.shopify.com/api/v2/components.json"
+    incidents_endpoint: "https://status.shopify.com/api/v2/incidents.json"
+    status_endpoint: "https://status.shopify.com/api/v2/status.json"
+
+  - name: Coinbase
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://coinbase.statuspage.io/api/v2/components.json"
+    incidents_endpoint: "https://coinbase.statuspage.io/api/v2/incidents.json"
+    status_endpoint: "https://coinbase.statuspage.io/api/v2/status.json"
+
+
+  - name: PureCloud
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.mypurecloud.com/api/v2/components.json"
+    incidents_endpoint: "https://status.mypurecloud.com/api/v2/incidents.json"
+    status_endpoint: "https://status.mypurecloud.com/api/v2/status.json"
+
