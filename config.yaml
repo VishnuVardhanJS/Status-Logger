@@ -26,15 +26,6 @@ services:
     incidents_endpoint: "https://status.datadoghq.com/api/v2/incidents.json"
     status_endpoint: "https://status.datadoghq.com/api/v2/status.json"
 
-  - name: DigitalOcean
-    poll_interval: 60
-    poll_interval_during_outage: 15
-    status_provider: "atlassian_status"
-    module: "services.atlassian_status"
-    components_endpoint: "https://status.digitalocean.com/api/v2/components.json"
-    incidents_endpoint: "https://status.digitalocean.com/api/v2/incidents.json"
-    status_endpoint: "https://status.digitalocean.com/api/v2/status.json"
-
   - name: Shopify
     poll_interval: 60
     poll_interval_during_outage: 15
@@ -62,4 +53,292 @@ services:
     components_endpoint: "https://status.mypurecloud.com/api/v2/components.json"
     incidents_endpoint: "https://status.mypurecloud.com/api/v2/incidents.json"
     status_endpoint: "https://status.mypurecloud.com/api/v2/status.json"
+
+  - name: AppsFlyer
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "http://status.appsflyer.com/api/v2/components.json"
+    incidents_endpoint: "http://status.appsflyer.com/api/v2/incidents.json"
+    status_endpoint: "http://status.appsflyer.com/api/v2/status.json"
+
+  - name: Discord
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://discordstatus.com/api/v2/components.json"
+    incidents_endpoint: "https://discordstatus.com/api/v2/incidents.json"
+    status_endpoint: "https://discordstatus.com/api/v2/status.json"
+
+  - name: Linear
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://linearstatus.com/api/v2/components.json"
+    incidents_endpoint: "https://linearstatus.com/api/v2/incidents.json"
+    status_endpoint: "https://linearstatus.com/api/v2/status.json"
+
+  - name: Amplitude
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.amplitude.com/api/v2/components.json"
+    incidents_endpoint: "https://status.amplitude.com/api/v2/incidents.json"
+    status_endpoint: "https://status.amplitude.com/api/v2/status.json"
+
+  - name: Atlassian
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.atlassian.com/api/v2/components.json"
+    incidents_endpoint: "https://status.atlassian.com/api/v2/incidents.json"
+    status_endpoint: "https://status.atlassian.com/api/v2/status.json"
+
+  - name: Box
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.box.com/api/v2/components.json"
+    incidents_endpoint: "https://status.box.com/api/v2/incidents.json"
+    status_endpoint: "https://status.box.com/api/v2/status.json"
+
+  - name: Cloudways
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.cloudways.com/api/v2/components.json"
+    incidents_endpoint: "https://status.cloudways.com/api/v2/incidents.json"
+    status_endpoint: "https://status.cloudways.com/api/v2/status.json"
+
+  - name: Crowdin
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.crowdin.com/api/v2/components.json"
+    incidents_endpoint: "https://status.crowdin.com/api/v2/incidents.json"
+    status_endpoint: "https://status.crowdin.com/api/v2/status.json"
+
+  - name: Datadog
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.datadoghq.com/api/v2/components.json"
+    incidents_endpoint: "https://status.datadoghq.com/api/v2/incidents.json"
+    status_endpoint: "https://status.datadoghq.com/api/v2/status.json"
+
+  - name: DigitalOcean
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.digitalocean.com/api/v2/components.json"
+    incidents_endpoint: "https://status.digitalocean.com/api/v2/incidents.json"
+    status_endpoint: "https://status.digitalocean.com/api/v2/status.json"
+
+  - name: Dropbox
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.dropbox.com/api/v2/components.json"
+    incidents_endpoint: "https://status.dropbox.com/api/v2/incidents.json"
+    status_endpoint: "https://status.dropbox.com/api/v2/status.json"
+
+  - name: Epic Games
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.epicgames.com/api/v2/components.json"
+    incidents_endpoint: "https://status.epicgames.com/api/v2/incidents.json"
+    status_endpoint: "https://status.epicgames.com/api/v2/status.json"
+
+  - name: GitHub
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.github.com/api/v2/components.json"
+    incidents_endpoint: "https://status.github.com/api/v2/incidents.json"
+    status_endpoint: "https://status.github.com/api/v2/status.json"
+
+  - name: Grammarly
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.grammarly.com/api/v2/components.json"
+    incidents_endpoint: "https://status.grammarly.com/api/v2/incidents.json"
+    status_endpoint: "https://status.grammarly.com/api/v2/status.json"
+
+  - name: HiBob
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.hibob.io/api/v2/components.json"
+    incidents_endpoint: "https://status.hibob.io/api/v2/incidents.json"
+    status_endpoint: "https://status.hibob.io/api/v2/status.json"
+
+  - name: HubSpot
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.hubspot.com/api/v2/components.json"
+    incidents_endpoint: "https://status.hubspot.com/api/v2/incidents.json"
+    status_endpoint: "https://status.hubspot.com/api/v2/status.json"
+
+  - name: Kinsta
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.kinsta.com/api/v2/components.json"
+    incidents_endpoint: "https://status.kinsta.com/api/v2/incidents.json"
+    status_endpoint: "https://status.kinsta.com/api/v2/status.json"
+
+  - name: Linode
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.linode.com/api/v2/components.json"
+    incidents_endpoint: "https://status.linode.com/api/v2/incidents.json"
+    status_endpoint: "https://status.linode.com/api/v2/status.json"
+
+  - name: Scaleway
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.scaleway.com/api/v2/components.json"
+    incidents_endpoint: "https://status.scaleway.com/api/v2/incidents.json"
+    status_endpoint: "https://status.scaleway.com/api/v2/status.json"
+
+  - name: Sumsub
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.sumsub.com/api/v2/components.json"
+    incidents_endpoint: "https://status.sumsub.com/api/v2/incidents.json"
+    status_endpoint: "https://status.sumsub.com/api/v2/status.json"
+
+  - name: Tailscale
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.tailscale.com/api/v2/components.json"
+    incidents_endpoint: "https://status.tailscale.com/api/v2/incidents.json"
+    status_endpoint: "https://status.tailscale.com/api/v2/status.json"
+
+  - name: Taskade
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.taskade.com/api/v2/components.json"
+    incidents_endpoint: "https://status.taskade.com/api/v2/incidents.json"
+    status_endpoint: "https://status.taskade.com/api/v2/status.json"
+
+  - name: Udemy
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.udemy.com/api/v2/components.json"
+    incidents_endpoint: "https://status.udemy.com/api/v2/incidents.json"
+    status_endpoint: "https://status.udemy.com/api/v2/status.json"
+
+  - name: UpCloud
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.upcloud.com/api/v2/components.json"
+    incidents_endpoint: "https://status.upcloud.com/api/v2/incidents.json"
+    status_endpoint: "https://status.upcloud.com/api/v2/status.json"
+
+  - name: WorkspaceOne
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.workspaceone.com/api/v2/components.json"
+    incidents_endpoint: "https://status.workspaceone.com/api/v2/incidents.json"
+    status_endpoint: "https://status.workspaceone.com/api/v2/status.json"
+
+  - name: Zoom
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://status.zoom.us/api/v2/components.json"
+    incidents_endpoint: "https://status.zoom.us/api/v2/incidents.json"
+    status_endpoint: "https://status.zoom.us/api/v2/status.json"
+
+  - name: Cloudflare
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://www.cloudflarestatus.com/api/v2/components.json"
+    incidents_endpoint: "https://www.cloudflarestatus.com/api/v2/incidents.json"
+    status_endpoint: "https://www.cloudflarestatus.com/api/v2/status.json"
+
+  - name: Netlify
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://www.netlifystatus.com/api/v2/components.json"
+    incidents_endpoint: "https://www.netlifystatus.com/api/v2/incidents.json"
+    status_endpoint: "https://www.netlifystatus.com/api/v2/status.json"
+
+  - name: Pinterest
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://www.pintereststatus.com/api/v2/components.json"
+    incidents_endpoint: "https://www.pintereststatus.com/api/v2/incidents.json"
+    status_endpoint: "https://www.pintereststatus.com/api/v2/status.json"
+
+  - name: Reddit
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://www.redditstatus.com/api/v2/components.json"
+    incidents_endpoint: "https://www.redditstatus.com/api/v2/incidents.json"
+    status_endpoint: "https://www.redditstatus.com/api/v2/status.json"
+
+  - name: Vercel
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://www.vercel-status.com/api/v2/components.json"
+    incidents_endpoint: "https://www.vercel-status.com/api/v2/incidents.json"
+    status_endpoint: "https://www.vercel-status.com/api/v2/status.json"
+
+  - name: Wikimedia
+    poll_interval: 60
+    poll_interval_during_outage: 15
+    status_provider: "atlassian_status"
+    module: "services.atlassian_status"
+    components_endpoint: "https://www.wikimediastatus.net/api/v2/components.json"
+    incidents_endpoint: "https://www.wikimediastatus.net/api/v2/incidents.json"
+    status_endpoint: "https://www.wikimediastatus.net/api/v2/status.json"
 
